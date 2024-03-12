@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { heroImg } from '../assets';
 import { MainHeading, SubHeading } from '../UI/Typo';
 import Button from '../UI/Button';
+import Wave from '../UI/Wave';
 
 const HeaderStyle = styled.header`
 	position: relative;
@@ -38,6 +39,7 @@ function Header() {
 				</MainHeading>
 				<Button margintop={4}>Reserve Your Culinary Journey Now!</Button>
 			</TextBox>
+			<Wave />
 		</HeaderStyle>
 	);
 }

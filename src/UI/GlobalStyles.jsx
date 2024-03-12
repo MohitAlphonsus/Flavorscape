@@ -7,9 +7,11 @@ const GlobalStyles = createGlobalStyle`
 
     --color-primary:#8B0000;
     --color-accent-white: #FFF8E1;
+    --color-accent-white-1: #FFFCF6;
     --color-accent-gold:#FFD700;
     --color-accent-green:#556B2F;
 
+    --color-white:#FFF;
     --color-light-gray:#F5F5F5;
 
   }
