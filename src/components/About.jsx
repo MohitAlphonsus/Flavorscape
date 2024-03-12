@@ -1,5 +1,7 @@
 import styled from 'styled-components';
-import { aboutImgFirst } from '../assets';
+import { HiCheckCircle } from 'react-icons/hi2';
+
+import { aboutImgFirst, chefPotrait } from '../assets';
 import { SecondaryHeading, SubHeading, MainText } from '../UI/Typo';
 import Button from '../UI/Button';
 
@@ -57,6 +59,32 @@ const ImageBox = styled.div`
 	}
 `;
 
+const KeyPoints = styled.ul`
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	list-style-type: none;
+	margin-top: 6rem;
+
+	li {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	li > *:not(:last-child) {
+		font-size: 2rem;
+	}
+`;
+
+const ImagePotrait = styled.img`
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 20rem;
+	opacity: 0.2;
+`;
+
 function About() {
 	return (
 		<AboutStyle>
@@ -78,7 +106,30 @@ function About() {
 				</TextBox>
 				<ImageBox role="image">&nbsp;</ImageBox>
 			</AboutBox>
-			{/* <Wave /> */}
+			<KeyPoints>
+				<li>
+					<HiCheckCircle />
+					<MainText>
+						Elevate your dining experience with dishes meticulously crafted by
+						our passionate and skilled chefs.
+					</MainText>
+				</li>
+				<li>
+					<HiCheckCircle />
+					<MainText>
+						Immerse yourself in a symphony of flavors, each dish telling a
+						unique story of taste and indulgence.
+					</MainText>
+				</li>
+				<li>
+					<HiCheckCircle />
+					<MainText>
+						Join us in an inviting ambiance that seamlessly blends creativity
+						and comfort, setting the stage for memorable dining moments.
+					</MainText>
+				</li>
+			</KeyPoints>
+			<ImagePotrait src={chefPotrait} alt="cartoony potrait of chef" />
 		</AboutStyle>
 	);
 }
