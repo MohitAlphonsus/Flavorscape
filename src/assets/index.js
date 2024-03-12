@@ -9,18 +9,16 @@ import customer_2 from './customers/customer-2.jpg';
 import customer_3 from './customers/customer-3.jpg';
 import customer_4 from './customers/customer-4.jpg';
 import customer_5 from './customers/customer-5.jpg';
-import customer_6 from './customers/customer-6.jpg';
 
 export {
 	heroImg,
 	aboutImgFirst,
 	aboutImgSecond,
 	chefPotrait,
-  testimonialBg
+	testimonialBg,
 	customer_1,
 	customer_2,
 	customer_3,
 	customer_4,
 	customer_5,
-	customer_6,
 };
