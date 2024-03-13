@@ -5,7 +5,7 @@ import { aboutImgFirst, chefPotrait } from '../assets';
 import { SecondaryHeading, SubHeading, MainText } from '../UI/Typo';
 import Button from '../UI/Button';
 import keyPoints from '../constants/keyPoints';
-import IconTextList from '../UI/IconTextList';
+import IconTextList from './IconTextList';
 
 const AboutStyle = styled.section`
 	position: relative;
