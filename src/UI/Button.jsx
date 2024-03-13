@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const ButtonStyle = styled.button`
 	border: none;
@@ -8,7 +8,14 @@ const ButtonStyle = styled.button`
 	font-weight: 700;
 	cursor: pointer;
 	transition: all 0.2s ease-in;
-	margin-top: ${props => 0 || props?.margintop}rem;
+	${props => {
+		switch (props.$margintop) {
+			case 'small':
+				return css`
+					margin-top: 4rem;
+				`;
+		}
+	}};
 `;
 
 const ButtonPrimary = styled(ButtonStyle)`
@@ -25,9 +32,9 @@ const ButtonLink = styled(ButtonStyle)`
 	}
 `;
 
-function Button({ children, margintop, href }) {
+function Button({ children, href, $margintop }) {
 	if (!href)
-		return <ButtonPrimary margintop={margintop}>{children}</ButtonPrimary>;
+		return <ButtonPrimary $margintop={$margintop}>{children}</ButtonPrimary>;
 
 	return <ButtonLink>{children}</ButtonLink>;
 }

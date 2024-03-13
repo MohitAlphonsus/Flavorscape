@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { SmallText } from '../UI/Typo';
 
 const TestimonialStyle = styled.div`
@@ -27,8 +27,9 @@ const Customer = styled.div`
 		height: 6rem;
 		width: 6rem;
 		border-radius: 50%;
-		background: url(${props => props.customerphoto}) no-repeat center
-			center/cover;
+		${props => css`
+			background: url(${props.$customerphoto}) no-repeat center center/cover;
+		`}
 	}
 
 	p {
@@ -53,7 +54,7 @@ function Testimonial({
 }) {
 	return (
 		<TestimonialStyle>
-			<Customer customerphoto={customerphoto}>
+			<Customer $customerphoto={customerphoto}>
 				<div role="image">&nbsp;</div>
 				<p>{customerName}</p>
 				<span>(Review for {dishName})</span>

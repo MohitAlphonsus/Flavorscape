@@ -4,6 +4,8 @@ import { HiCheckCircle } from 'react-icons/hi2';
 import { aboutImgFirst, chefPotrait } from '../assets';
 import { SecondaryHeading, SubHeading, MainText } from '../UI/Typo';
 import Button from '../UI/Button';
+import keyPoints from '../constants/keyPoints';
+import IconTextList from '../UI/IconTextList';
 
 const AboutStyle = styled.section`
 	position: relative;
@@ -65,16 +67,6 @@ const KeyPoints = styled.ul`
 	gap: 1rem;
 	list-style-type: none;
 	margin-top: 6rem;
-
-	li {
-		display: flex;
-		align-items: center;
-		gap: 1rem;
-	}
-
-	li > *:not(:last-child) {
-		font-size: 2rem;
-	}
 `;
 
 const ImagePotrait = styled.img`
@@ -91,10 +83,10 @@ function About() {
 			<AboutBox>
 				<TextBox>
 					<SubHeading>Discover Our Culinary Symphony</SubHeading>
-					<SecondaryHeading>
+					<SecondaryHeading $secondary="true">
 						A Harmony of Flavors, Crafted with Passion and Precision
 					</SecondaryHeading>
-					<MainText>
+					<MainText $text="light">
 						Welcome to Flavorscape, where culinary artistry meets a devotion to
 						exceptional dining experiences. Our chefs, driven by a passion for
 						perfection, meticulously curate each dish to transport you on a
@@ -107,27 +99,13 @@ function About() {
 				<ImageBox role="image">&nbsp;</ImageBox>
 			</AboutBox>
 			<KeyPoints>
-				<li>
-					<HiCheckCircle />
-					<MainText>
-						Elevate your dining experience with dishes meticulously crafted by
-						our passionate and skilled chefs.
-					</MainText>
-				</li>
-				<li>
-					<HiCheckCircle />
-					<MainText>
-						Immerse yourself in a symphony of flavors, each dish telling a
-						unique story of taste and indulgence.
-					</MainText>
-				</li>
-				<li>
-					<HiCheckCircle />
-					<MainText>
-						Join us in an inviting ambiance that seamlessly blends creativity
-						and comfort, setting the stage for memorable dining moments.
-					</MainText>
-				</li>
+				{keyPoints.map(point => (
+					<IconTextList
+						key={point.id}
+						Icon={point.icon}
+						text={point.pointText}
+					/>
+				))}
 			</KeyPoints>
 			<ImagePotrait src={chefPotrait} alt="cartoony potrait of chef" />
 		</AboutStyle>

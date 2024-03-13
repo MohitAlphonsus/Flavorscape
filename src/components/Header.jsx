@@ -9,8 +9,8 @@ const HeaderStyle = styled.header`
 	height: 140dvh;
 	background: linear-gradient(
 			to right bottom,
-			rgba(0, 0, 0, 0.7),
-			rgba(0, 0, 0, 0.7)
+			rgba(0, 0, 0, 0.8),
+			rgba(0, 0, 0, 0.8)
 		),
 		url(${heroImg}) no-repeat center center/cover;
 `;
@@ -37,7 +37,7 @@ function Header() {
 				<MainHeading>
 					Indulge in Exquisite Flavors, Where Passion Meets Palate
 				</MainHeading>
-				<Button margintop={4}>Reserve Your Culinary Journey Now!</Button>
+				<Button $margintop="small">Reserve Your Culinary Journey Now!</Button>
 			</TextBox>
 			<Wave />
 		</HeaderStyle>

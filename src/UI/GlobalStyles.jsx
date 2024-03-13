@@ -5,9 +5,14 @@ const GlobalStyles = createGlobalStyle`
     --body-font: "Lato", sans-serif;
     --heading-font: "Playfair Display", serif;
 
-    --color-primary:#8B0000;
-    --color-accent-white: #FFF8E1;
-    --color-accent-white-1: #FFFCF6;
+    --color-primary:#e6c9a2;
+    --color-secondary:#0e1927; // text/heading on light
+
+    --color-gray-text:#666666; // small text on light
+
+    --color-accent-white: #FFF8E1; // text/heading on dark
+    --color-accent-white-1: #FFFCF6; //bg-only
+
     --color-accent-gold:#FFD700;
     --color-accent-green:#556B2F;
 
