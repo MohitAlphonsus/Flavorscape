@@ -24,4 +24,16 @@ const MainText = styled.p`
 	line-height: 1.7;
 `;
 
-export { MainHeading, SecondaryHeading, TertiaryHeading, SubHeading, MainText };
+const SmallText = styled.p`
+	font-size: 1.6rem;
+	line-height: 1.7;
+`;
+
+export {
+	MainHeading,
+	SecondaryHeading,
+	TertiaryHeading,
+	SubHeading,
+	MainText,
+	SmallText,
+};
