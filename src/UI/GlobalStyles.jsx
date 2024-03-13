@@ -52,12 +52,17 @@ const GlobalStyles = createGlobalStyle`
     font-style: italic;
   }
 
-  ul[role='list'] {
-    list-style: none; 
+  ul {
+    list-style-type: none;
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: var(--heading-font);
+}
+
+button:focus,input:focus{
+  outline: 1px dotted var(--color-primary);
+  outline-offset:1rem;
 }
 
 `;
