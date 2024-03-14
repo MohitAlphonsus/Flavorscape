@@ -1,15 +1,22 @@
 import styled, { css } from 'styled-components';
-import { SmallText } from '../UI/Typo';
+import { FaQuoteLeft } from 'react-icons/fa6';
+import { MainText } from '../UI/Typo';
 
 const TestimonialStyle = styled.div`
 	display: flex;
+	align-items: center;
+	text-align: center;
 	flex-direction: column;
 	gap: 2rem;
 
 	color: var(--color-accent-white);
-	background-color: rgba(255, 255, 255, 0.1);
 	padding: 2rem 4rem;
 	border-radius: 9px;
+
+	& > *:first-child {
+		font-size: 6rem;
+		color: var(--color-gray-text);
+	}
 `;
 
 const Customer = styled.div`
@@ -51,12 +58,13 @@ function Testimonial({
 	return (
 		<swiper-slide>
 			<TestimonialStyle>
+				<FaQuoteLeft />
+				<MainText>{testimonialText}</MainText>
 				<Customer $customerphoto={customerphoto}>
 					<div role="image">&nbsp;</div>
 					<p>{customerName}</p>
 					<span>(Review for {dishName})</span>
 				</Customer>
-				<SmallText>{testimonialText}</SmallText>
 			</TestimonialStyle>
 		</swiper-slide>
 	);

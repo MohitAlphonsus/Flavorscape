@@ -8,9 +8,8 @@ import { testimonialBg } from '../assets';
 import { testimonialData } from '../constants/testimonialData';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
 
 const TestimonialsStyle = styled.section`
 	background-image: linear-gradient(
@@ -54,10 +53,9 @@ function Testimonials() {
 			<TestimonialContainer>
 				<Swiper
 					spaceBetween={30}
-					pagination={{
-						clickable: true,
-					}}
-					modules={[Pagination]}
+					loop={true}
+					autoplay={{ delay: 3000, disableOnInteraction: false }}
+					modules={[Autoplay]}
 				>
 					{testimonialData.map(data => (
 						<SwiperSlide key={data.id}>
