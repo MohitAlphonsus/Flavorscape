@@ -88,8 +88,8 @@ const FormInput = styled.div`
 
 	& > *:last-child {
 		position: absolute;
-		top: 1px;
-		right: 1px;
+		top: 2px;
+		right: 2px;
 		border: none;
 		padding: 0.4rem 1rem;
 		background-color: var(--color-primary);

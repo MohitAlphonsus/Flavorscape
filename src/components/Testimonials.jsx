@@ -1,6 +1,9 @@
 import styled from 'styled-components';
-import Testimonial from './Testimonial';
+
+import { Testimonial } from '../components';
 import { SecondaryHeading, SubHeading } from '../UI/Typo';
+import Heading from '../UI/Heading';
+
 import { testimonialBg } from '../assets';
 import { testimonialData } from '../constants/testimonialData';
 
@@ -29,11 +32,6 @@ const TestimonialContainer = styled.div`
 	grid-template-columns: repeat(3, 1fr);
 	gap: 2rem;
 	width: min(95%, 120rem);
-`;
-
-const Heading = styled.div`
-	text-align: center;
-	margin-bottom: 6rem;
 `;
 
 function Testimonials() {
