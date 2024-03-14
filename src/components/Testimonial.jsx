@@ -10,10 +10,6 @@ const TestimonialStyle = styled.div`
 	background-color: rgba(255, 255, 255, 0.1);
 	padding: 2rem 4rem;
 	border-radius: 9px;
-
-	&:last-child {
-		grid-column: span 2;
-	}
 `;
 
 const Customer = styled.div`
@@ -53,14 +49,16 @@ function Testimonial({
 	customerphoto,
 }) {
 	return (
-		<TestimonialStyle>
-			<Customer $customerphoto={customerphoto}>
-				<div role="image">&nbsp;</div>
-				<p>{customerName}</p>
-				<span>(Review for {dishName})</span>
-			</Customer>
-			<SmallText>{testimonialText}</SmallText>
-		</TestimonialStyle>
+		<swiper-slide>
+			<TestimonialStyle>
+				<Customer $customerphoto={customerphoto}>
+					<div role="image">&nbsp;</div>
+					<p>{customerName}</p>
+					<span>(Review for {dishName})</span>
+				</Customer>
+				<SmallText>{testimonialText}</SmallText>
+			</TestimonialStyle>
+		</swiper-slide>
 	);
 }
 

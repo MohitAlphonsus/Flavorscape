@@ -7,6 +7,11 @@ import Heading from '../UI/Heading';
 import { testimonialBg } from '../assets';
 import { testimonialData } from '../constants/testimonialData';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+
 const TestimonialsStyle = styled.section`
 	background-image: linear-gradient(
 			to right,
@@ -28,10 +33,12 @@ const TestimonialsStyle = styled.section`
 `;
 
 const TestimonialContainer = styled.div`
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 2rem;
 	width: min(95%, 120rem);
+
+	& > *:first-child {
+		width: 100%;
+		height: 100%;
+	}
 `;
 
 function Testimonials() {
@@ -45,15 +52,24 @@ function Testimonials() {
 				</SecondaryHeading>
 			</Heading>
 			<TestimonialContainer>
-				{testimonialData.map(data => (
-					<Testimonial
-						key={data.id}
-						customerName={data.customerName}
-						dishName={data.dish}
-						testimonialText={data.testimonial}
-						customerphoto={data.customerPhoto}
-					/>
-				))}
+				<Swiper
+					spaceBetween={30}
+					pagination={{
+						clickable: true,
+					}}
+					modules={[Pagination]}
+				>
+					{testimonialData.map(data => (
+						<SwiperSlide key={data.id}>
+							<Testimonial
+								customerName={data.customerName}
+								dishName={data.dish}
+								testimonialText={data.testimonial}
+								customerphoto={data.customerPhoto}
+							/>
+						</SwiperSlide>
+					))}
+				</Swiper>
 			</TestimonialContainer>
 		</TestimonialsStyle>
 	);
