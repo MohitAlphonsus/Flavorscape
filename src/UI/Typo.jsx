@@ -19,6 +19,14 @@ const SecondaryHeading = styled.h2`
 const TertiaryHeading = styled.h3`
 	font-size: 3rem;
 	font-weight: 400;
+	${props => {
+		switch (props.$secondary) {
+			case 'true':
+				return css`
+					color: var(--color-secondary);
+				`;
+		}
+	}};
 `;
 
 const SubHeading = styled.p`
@@ -45,6 +53,14 @@ const MainText = styled.p`
 const SmallText = styled.p`
 	font-size: 1.6rem;
 	line-height: 1.8;
+	${props => {
+		switch (props.$text) {
+			case 'light':
+				return css`
+					color: var(--color-gray-text);
+				`;
+		}
+	}}
 `;
 
 export {
