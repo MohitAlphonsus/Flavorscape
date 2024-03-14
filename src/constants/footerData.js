@@ -33,7 +33,7 @@ const footerData = {
 	},
 
 	newsLetter: {
-		title: 'Subscribe Newsletter',
+		title: 'Newsletter',
 		text: 'Subscribe to our newsletter to get regular update about offers !!',
 		icon: IoIosSend,
 	},
