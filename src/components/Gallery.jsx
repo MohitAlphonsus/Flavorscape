@@ -5,7 +5,7 @@ import { gallery } from '../constants/gallery';
 import Picture from './Picture';
 
 const GalleryStyles = styled.section`
-	padding: 0 5% 6rem 5%;
+	padding: 6rem 5%;
 `;
 
 const GalleryContainer = styled.div`
