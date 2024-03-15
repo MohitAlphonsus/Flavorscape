@@ -1,6 +1,13 @@
 import GlobalStyles from './UI/GlobalStyles';
-import { Header, About, Features, Testimonials, Footer } from './components';
-import Gallery from './components/Gallery';
+import {
+	Header,
+	About,
+	Features,
+	Testimonials,
+	Footer,
+	Booking,
+	Gallery,
+} from './components';
 
 export default function App() {
 	return (
@@ -10,6 +17,7 @@ export default function App() {
 			<Features />
 			<Gallery />
 			<Testimonials />
+			<Booking />
 			<Footer />
 			<GlobalStyles />
 		</>
