@@ -10,6 +10,7 @@ import Testimonial from './Testimonial';
 import Gallery from './Gallery';
 import Booking from './Booking';
 import Form from './Form';
+import SpecialDishes from './SpecialDishes';
 
 export {
 	Header,
@@ -24,4 +25,5 @@ export {
 	Gallery,
 	Booking,
 	Form,
+	SpecialDishes,
 };
