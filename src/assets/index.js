@@ -18,6 +18,9 @@ import gallery5 from './gallery/gallery-5.jpg';
 import gallery6 from './gallery/gallery-6.jpg';
 import gallery7 from './gallery/gallery-7.jpg';
 
+import formDeco1 from './form-deco-1.png';
+import formDeco2 from './form-deco-2.png';
+
 export {
 	heroImg,
 	aboutImgFirst,
@@ -36,4 +39,6 @@ export {
 	gallery5,
 	gallery6,
 	gallery7,
+	formDeco1,
+	formDeco2,
 };
