@@ -18,20 +18,21 @@ const dishes = [
 	},
 	{
 		id: 3,
-		name: 'Butter Naan',
-		ingredients:
-			'Soft and fluffy bread made from refined flour, butter, and yogurt, baked in a clay oven until golden brown.',
-		imgUrl: dish3,
-		price: 70,
-	},
-	{
-		id: 4,
 		name: 'Rogan Josh',
 		ingredients:
 			'Tender pieces of lamb cooked in a flavorful gravy made with aromatic spices like cardamom, cloves, and cinnamon, finished with a touch of saffron-infused yogurt.',
 		imgUrl: dish4,
 		price: 420,
 	},
+	{
+		id: 4,
+		name: 'Butter Naan',
+		ingredients:
+			'Soft and fluffy bread made from refined flour, butter, and yogurt, baked in a clay oven until golden brown.',
+		imgUrl: dish3,
+		price: 70,
+	},
+
 	{
 		id: 5,
 		name: 'Palak Paneer',

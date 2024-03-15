@@ -13,9 +13,6 @@ const GlobalStyles = createGlobalStyle`
     --color-accent-white: #FFF8E1; // text/heading on dark
     --color-accent-white-1: #FFFCF6; //bg-only
 
-    --color-accent-gold:#FFD700;
-    --color-accent-green:#556B2F;
-
     --color-white:#FFF;
     --color-light-gray:#F5F5F5;
 

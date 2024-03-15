@@ -6,7 +6,7 @@ import Wave from '../UI/Wave';
 
 const HeaderStyle = styled.header`
 	position: relative;
-	height: 140dvh;
+	height: 100dvh;
 	background: linear-gradient(
 			to right bottom,
 			rgba(0, 0, 0, 0.8),

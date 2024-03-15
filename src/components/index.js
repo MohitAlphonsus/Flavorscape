@@ -11,6 +11,7 @@ import Gallery from './Gallery';
 import Booking from './Booking';
 import Form from './Form';
 import SpecialDishes from './SpecialDishes';
+import Dish from './Dish';
 
 export {
 	Header,
@@ -26,4 +27,5 @@ export {
 	Booking,
 	Form,
 	SpecialDishes,
+	Dish,
 };

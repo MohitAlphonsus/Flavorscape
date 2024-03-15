@@ -7,6 +7,7 @@ import {
 	Footer,
 	Booking,
 	Gallery,
+	SpecialDishes,
 } from './components';
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
 			<Header />
 			<About />
 			<Features />
+			<SpecialDishes />
 			<Gallery />
 			<Testimonials />
 			<Booking />

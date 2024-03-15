@@ -29,6 +29,11 @@ const TertiaryHeading = styled.h3`
 	}};
 `;
 
+const QuaternaryHeading = styled.h4`
+	font-size: 2.5rem;
+	font-weight: 500;
+`;
+
 const SubHeading = styled.p`
 	font-size: 1.6rem;
 	font-weight: 600;
@@ -67,6 +72,7 @@ export {
 	MainHeading,
 	SecondaryHeading,
 	TertiaryHeading,
+	QuaternaryHeading,
 	SubHeading,
 	MainText,
 	SmallText,
