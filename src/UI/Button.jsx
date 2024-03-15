@@ -20,7 +20,7 @@ const ButtonStyle = styled.button`
 
 const ButtonPrimary = styled(ButtonStyle)`
 	padding: 1.8rem 3rem;
-	background: var(--color-accent-gold);
+	background: var(--color-primary);
 `;
 
 const ButtonLink = styled(ButtonStyle)`
