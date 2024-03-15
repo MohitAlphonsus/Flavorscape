@@ -21,6 +21,13 @@ import gallery7 from './gallery/gallery-7.jpg';
 import formDeco1 from './form-deco-1.png';
 import formDeco2 from './form-deco-2.png';
 
+import dish1 from './dishes/dish-1.png';
+import dish2 from './dishes/dish-2.png';
+import dish3 from './dishes/dish-3.png';
+import dish4 from './dishes/dish-4.png';
+import dish5 from './dishes/dish-5.png';
+import dish6 from './dishes/dish-6.png';
+
 export {
 	heroImg,
 	aboutImgFirst,
@@ -41,4 +48,10 @@ export {
 	gallery7,
 	formDeco1,
 	formDeco2,
+	dish1,
+	dish2,
+	dish3,
+	dish4,
+	dish5,
+	dish6,
 };
