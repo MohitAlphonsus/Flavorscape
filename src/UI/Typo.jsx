@@ -39,7 +39,20 @@ const SubHeading = styled.p`
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: var(--color-primary);
+	${props => {
+		switch (props.$text) {
+			case 'primary-dark': {
+				return css`
+					color: var(--color-primary);
+				`;
+			}
+			case 'primary-light': {
+				return css`
+					color: var(--color-primary-light);
+				`;
+			}
+		}
+	}}
 `;
 
 const MainText = styled.p`

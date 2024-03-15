@@ -20,7 +20,10 @@ function Gallery() {
 	return (
 		<GalleryStyles>
 			<Heading>
-				<SubHeading>Savor Our Culinary Creations</SubHeading>
+				<SubHeading $text="primary-dark">
+					{' '}
+					Savor Our Culinary Creations
+				</SubHeading>
 				<SecondaryHeading $secondary="true">
 					Feast Your Eyes on Our Exquisite Dishes
 				</SecondaryHeading>

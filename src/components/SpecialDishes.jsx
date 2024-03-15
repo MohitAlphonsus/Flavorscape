@@ -12,6 +12,8 @@ const SpecialDishesStyle = styled.section`
 	flex-direction: column;
 	align-items: center;
 	gap: 4rem;
+	position: relative;
+	z-index: 1;
 `;
 
 const DishContainer = styled.div`
@@ -26,7 +28,9 @@ function SpecialDishes() {
 	return (
 		<SpecialDishesStyle>
 			<Heading>
-				<SubHeading>Indulge in Culinary Delights</SubHeading>
+				<SubHeading $text="primary-dark">
+					Indulge in Culinary Delights
+				</SubHeading>
 				<SecondaryHeading $secondary="true">
 					Explore Our Exquisite Selection of Specialties
 				</SecondaryHeading>
@@ -44,7 +48,7 @@ function SpecialDishes() {
 						/>
 					))}
 			</DishContainer>
-			<Button>Get Your Flavors Delivered!</Button>
+			<Button $varient="secondary">Get Your Flavors Delivered!</Button>
 		</SpecialDishesStyle>
 	);
 }

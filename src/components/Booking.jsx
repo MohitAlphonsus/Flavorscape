@@ -15,7 +15,9 @@ function Booking() {
 	return (
 		<BookingStyle>
 			<Heading>
-				<SubHeading>Reserve Your Culinary Adventure</SubHeading>
+				<SubHeading $text="primary-dark">
+					Reserve Your Culinary Adventure
+				</SubHeading>
 				<SecondaryHeading $secondary="true">
 					Secure Your Spot for a Memorable Dining Experience
 				</SecondaryHeading>

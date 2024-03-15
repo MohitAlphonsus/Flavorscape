@@ -5,15 +5,15 @@ const GlobalStyles = createGlobalStyle`
     --body-font: "Lato", sans-serif;
     --heading-font: "Playfair Display", serif;
 
-    --color-primary:#e6c9a2;
+    --color-primary:#d98c26;
+    --color-primary-light:#e6c9a2;
     --color-secondary:#0e1927; // text/heading on light
 
-    --color-gray-text:#666666; // small text on light
+    --color-gray-text:#666666; // small text on light (light bg)
 
     --color-accent-white: #FFF8E1; // text/heading on dark
     --color-accent-white-1: #FFFCF6; //bg-only
 
-    --color-white:#FFF;
     --color-light-gray:#F5F5F5;
 
   }

@@ -56,7 +56,7 @@ const AddressStyle = styled.address`
 	}
 
 	span:first-child {
-		color: var(--color-primary);
+		color: var(--color-primary-light);
 		font-weight: 600;
 		position: relative;
 
@@ -75,7 +75,7 @@ const AddressStyle = styled.address`
 
 	&:last-child span:last-child {
 		font-size: 2.5rem;
-		color: var(--color-primary);
+		color: var(--color-primary-light);
 	}
 `;
 
@@ -92,7 +92,7 @@ const FormInput = styled.div`
 		right: 2px;
 		border: none;
 		padding: 0.4rem 1rem;
-		background-color: var(--color-primary);
+		background-color: var(--color-primary-light);
 		color: var(--color-accent-white);
 		font-size: 3rem;
 		cursor: pointer;
@@ -100,7 +100,7 @@ const FormInput = styled.div`
 
 		&:hover {
 			background-color: var(--color-secondary);
-			color: var(--color-primary);
+			color: var(--color-primary-light);
 		}
 	}
 `;

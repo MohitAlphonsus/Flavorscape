@@ -74,7 +74,9 @@ function About() {
 		<AboutStyle>
 			<AboutBox>
 				<TextBox>
-					<SubHeading>Discover Our Culinary Symphony</SubHeading>
+					<SubHeading $text="primary-dark">
+						Discover Our Culinary Symphony
+					</SubHeading>
 					<SecondaryHeading $secondary="true">
 						A Harmony of Flavors, Crafted with Passion and Precision
 					</SecondaryHeading>

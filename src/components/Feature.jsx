@@ -19,7 +19,7 @@ const IconStyle = styled.div`
 	height: 6rem;
 	width: 6rem;
 	border-radius: 50%;
-	background-color: var(--color-primary);
+	background-color: var(--color-primary-light);
 	color: var(--color-accent-white);
 	display: grid;
 	place-content: center;

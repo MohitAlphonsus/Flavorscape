@@ -19,7 +19,9 @@ function Features() {
 	return (
 		<FeaturesStyle>
 			<Heading>
-				<SubHeading>Discover Our Unique Features</SubHeading>
+				<SubHeading $text="primary-dark">
+					Discover Our Unique Features
+				</SubHeading>
 				<SecondaryHeading $secondary="true">
 					Experience What Sets Us Apart
 				</SecondaryHeading>

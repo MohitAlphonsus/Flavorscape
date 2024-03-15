@@ -33,7 +33,9 @@ function Header() {
 	return (
 		<HeaderStyle>
 			<TextBox>
-				<SubHeading>Savor the Art of Culinary Craftsmanship</SubHeading>
+				<SubHeading $text="primary-light">
+					Savor the Art of Culinary Craftsmanship
+				</SubHeading>
 				<MainHeading>
 					Indulge in Exquisite Flavors, Where Passion Meets Palate
 				</MainHeading>

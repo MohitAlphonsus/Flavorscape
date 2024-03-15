@@ -44,7 +44,9 @@ function Testimonials() {
 	return (
 		<TestimonialsStyle>
 			<Heading>
-				<SubHeading>Rave Reviews from Our Esteemed Guests</SubHeading>
+				<SubHeading $text="primary-light">
+					Rave Reviews from Our Esteemed Guests
+				</SubHeading>
 				<SecondaryHeading>
 					Discover What Our Customers Have to Say About Their Culinary
 					Experience
