@@ -7,6 +7,9 @@ import IconTextList from './IconTextList';
 import SocialIcon from './SocialIcon';
 import Testimonials from './Testimonials';
 import Testimonial from './Testimonial';
+import Gallery from './Gallery';
+import Booking from './Booking';
+import Form from './Form';
 
 export {
 	Header,
@@ -18,4 +21,7 @@ export {
 	SocialIcon,
 	Testimonials,
 	Testimonial,
+	Gallery,
+	Booking,
+	Form,
 };
