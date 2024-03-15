@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import { HiCheckCircle } from 'react-icons/hi2';
 
 import { aboutImgFirst, chefPotrait } from '../assets';
 import { SecondaryHeading, SubHeading, MainText } from '../UI/Typo';
 import Button from '../UI/Button';
 import keyPoints from '../constants/keyPoints';
 import IconTextList from './IconTextList';
+import ImagePotrait from '../UI/ImagePotrait';
 
 const AboutStyle = styled.section`
 	position: relative;
@@ -69,14 +69,6 @@ const KeyPoints = styled.ul`
 	margin-top: 6rem;
 `;
 
-const ImagePotrait = styled.img`
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 20rem;
-	opacity: 0.2;
-`;
-
 function About() {
 	return (
 		<AboutStyle>
@@ -107,7 +99,14 @@ function About() {
 					/>
 				))}
 			</KeyPoints>
-			<ImagePotrait src={chefPotrait} alt="cartoony potrait of chef" />
+			<ImagePotrait
+				imgSrc={chefPotrait}
+				imgAlt="cartoony potrait of chef"
+				bottom={0}
+				right={0}
+				width={20}
+				opacity={0.2}
+			/>
 		</AboutStyle>
 	);
 }
