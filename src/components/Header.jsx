@@ -13,6 +13,14 @@ const HeaderStyle = styled.header`
 			rgba(0, 0, 0, 0.8)
 		),
 		url(${heroImg}) no-repeat center center/cover;
+
+	@media (max-width: 60em) {
+		height: 120dvh;
+	}
+
+	@media (max-width: 560px) {
+		height: 100dvh;
+	}
 `;
 
 const TextBox = styled.div`
@@ -27,6 +35,14 @@ const TextBox = styled.div`
 	gap: 2rem;
 
 	color: var(--color-accent-white);
+
+	@media (max-width: 1040px) {
+		width: 70%;
+	}
+
+	@media (max-width: 700px) {
+		width: 80%;
+	}
 `;
 
 function Header() {

@@ -2,6 +2,14 @@ import styled, { css } from 'styled-components';
 
 const MainHeading = styled.h1`
 	font-size: 6rem;
+
+	@media (max-width: 700px) {
+		font-size: 5rem;
+	}
+
+	@media (max-width: 560px) {
+		font-size: 4rem;
+	}
 `;
 
 const SecondaryHeading = styled.h2`
@@ -14,6 +22,14 @@ const SecondaryHeading = styled.h2`
 				`;
 		}
 	}};
+
+	@media (max-width: 700px) {
+		font-size: 4rem;
+	}
+
+	@media (max-width: 560px) {
+		font-size: 3rem;
+	}
 `;
 
 const TertiaryHeading = styled.h3`
@@ -27,6 +43,10 @@ const TertiaryHeading = styled.h3`
 				`;
 		}
 	}};
+
+	@media (max-width: 700px) {
+		font-size: 2.5rem;
+	}
 `;
 
 const QuaternaryHeading = styled.h4`

@@ -5,13 +5,24 @@ import SocialIcon from './SocialIcon';
 import { footerData, footerIcon } from '../constants/footerData';
 
 const FooterStyle = styled.footer`
-	height: 90vh;
 	background-color: var(--color-secondary);
 	color: var(--color-accent-white);
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 4rem;
 	padding: 6rem 5%;
+
+	@media (max-width: 1040px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@media (max-width: 700px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (max-width: 560px) {
+		grid-template-columns: 1fr;
+	}
 `;
 
 const Box = styled.div`
@@ -21,6 +32,13 @@ const Box = styled.div`
 
 	& > *:first-child {
 		margin-bottom: 2rem;
+	}
+
+	@media (max-width: 560px) {
+		gap: 1.6rem;
+		& > *:first-child {
+			margin-bottom: 0;
+		}
 	}
 `;
 

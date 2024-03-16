@@ -13,6 +13,14 @@ const FeatureContainer = styled.ul`
 	grid-template-columns: repeat(3, 1fr);
 	box-shadow: 0 1rem 2rem 2rem rgba(0, 0, 0, 0.1);
 	border-radius: 9px;
+
+	@media (max-width: 1040px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (max-width: 700px) {
+		grid-template-columns: 1fr;
+	}
 `;
 
 function Features() {

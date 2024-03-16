@@ -9,6 +9,11 @@ const BookingStyle = styled.section`
 	background-color: var(--color-accent-white-1);
 	padding: 6rem 5%;
 	position: relative;
+
+	& > *:first-child {
+		background-color: rgba(255, 255, 255, 0.8);
+		padding: 0.2rem;
+	}
 `;
 
 function Booking() {

@@ -11,12 +11,22 @@ const AboutStyle = styled.section`
 	position: relative;
 	background-color: var(--color-accent-white-1);
 	padding: 6rem 9%;
+
+	@media (max-width: 1040px) {
+		padding: 6rem 5%;
+	}
 `;
 
 const AboutBox = styled.div`
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 3rem 1fr 3rem;
+
+	@media (max-width: 1040px) {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		gap: 1rem;
+	}
 `;
 
 const TextBox = styled.div`
@@ -48,6 +58,12 @@ const ImageBox = styled.div`
 	background: url(${aboutImgFirst}) no-repeat center center/cover;
 	grid-column: 2 / -1;
 	grid-row: 1 / -1;
+
+	@media (max-width: 1040px) {
+		grid-column: auto;
+		grid-row: auto;
+		height: 40rem;
+	}
 
 	&::before {
 		position: absolute;

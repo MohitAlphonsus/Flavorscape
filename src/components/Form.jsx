@@ -24,6 +24,18 @@ const FormStyle = styled.form`
 	& > *:last-child {
 		grid-column: 1 / 3;
 	}
+
+	@media (max-width: 1040px) {
+		width: min(100%, 75rem);
+	}
+
+	@media (max-width: 560px) {
+		grid-template-columns: 1fr;
+
+		& > * {
+			grid-column: 1 / 3;
+		}
+	}
 `;
 
 const InputStyle = styled.input`

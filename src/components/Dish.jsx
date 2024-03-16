@@ -5,7 +5,6 @@ import { dishDeco } from '../assets';
 const DishStyle = styled.div`
 	position: relative;
 	background-color: var(--color-light-gray);
-
 	border-top-left-radius: 30%;
 	border-bottom-right-radius: 30%;
 	padding: 8rem 2rem 2rem 2rem;
@@ -15,7 +14,6 @@ const DishStyle = styled.div`
 	flex-direction: column;
 	align-items: center;
 	gap: 1rem;
-
 	margin-top: 6rem;
 
 	&::before {
@@ -27,6 +25,39 @@ const DishStyle = styled.div`
 		height: calc(100% - 30%);
 		width: calc(100% - 30%);
 		background: url(${dishDeco}) no-repeat center center/cover;
+	}
+
+	@media (max-width: 1040px) {
+		&::before {
+			height: calc(100% - 20%);
+			width: calc(100% - 50%);
+		}
+	}
+
+	@media (max-width: 960px) {
+		&::before {
+			height: calc(100% - 40%);
+			width: calc(100% - 40%);
+		}
+	}
+
+	@media (max-width: 700px) {
+		padding: 10rem 4rem 4rem 4rem;
+
+		&::before {
+			height: calc(100% - 40%);
+			width: calc(100% - 10%);
+		}
+	}
+
+	@media (max-width: 560px) {
+		padding: 8rem 2rem 2rem 2rem;
+
+		&::before {
+			height: 100%;
+			width: calc(100% - 30%);
+			z-index: -1;
+		}
 	}
 `;
 

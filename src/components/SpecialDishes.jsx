@@ -22,6 +22,20 @@ const DishContainer = styled.div`
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 4rem;
+
+	@media (max-width: 1040px) {
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 10rem;
+	}
+
+	@media (max-width: 700px) {
+		grid-template-columns: 1fr;
+		width: min(50%, 100rem);
+	}
+
+	@media (max-width: 560px) {
+		width: min(80%, 100rem);
+	}
 `;
 
 function SpecialDishes() {
