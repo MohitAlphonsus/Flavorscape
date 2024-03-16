@@ -42,7 +42,7 @@ const TestimonialContainer = styled.div`
 
 function Testimonials() {
 	return (
-		<TestimonialsStyle>
+		<TestimonialsStyle id="testimonials">
 			<Heading>
 				<SubHeading $text="primary-light">
 					Rave Reviews from Our Esteemed Guests

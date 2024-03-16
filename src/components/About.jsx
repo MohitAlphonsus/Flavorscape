@@ -87,7 +87,7 @@ const KeyPoints = styled.ul`
 
 function About() {
 	return (
-		<AboutStyle>
+		<AboutStyle id="#about">
 			<AboutBox>
 				<TextBox>
 					<SubHeading $text="primary-dark">

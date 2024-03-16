@@ -25,7 +25,7 @@ const FeatureContainer = styled.ul`
 
 function Features() {
 	return (
-		<FeaturesStyle>
+		<FeaturesStyle id="#features"> 
 			<Heading>
 				<SubHeading $text="primary-dark">
 					Discover Our Unique Features

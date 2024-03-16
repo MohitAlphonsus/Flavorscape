@@ -18,7 +18,7 @@ const GalleryContainer = styled.div`
 
 function Gallery() {
 	return (
-		<GalleryStyles>
+		<GalleryStyles id="gallery">
 			<Heading>
 				<SubHeading $text="primary-dark">
 					{' '}

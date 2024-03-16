@@ -27,7 +27,7 @@ const IconStyle = styled.div`
 
 function Feature({ Icon, heading, desc }) {
 	return (
-		<FeatureBox>
+		<FeatureBox >
 			<IconStyle>
 				<Icon />
 			</IconStyle>
