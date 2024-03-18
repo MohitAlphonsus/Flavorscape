@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import { QuaternaryHeading, SmallText } from '../UI/Typo';
 import { dishDeco } from '../assets';
+import Button from '../UI/Button';
 
 const DishStyle = styled.div`
 	position: relative;
@@ -85,7 +86,7 @@ const DishImage = styled.div`
 	background-size: 100%;
 `;
 
-function Dish({ dishName, ing, price, imgUrl }) {
+function Dish({ dishName, ing, price, imgUrl, btnRequired }) {
 	return (
 		<DishStyle>
 			<QuaternaryHeading>{dishName}</QuaternaryHeading>
@@ -94,6 +95,7 @@ function Dish({ dishName, ing, price, imgUrl }) {
 			<DishImage role="image" $imgurl={imgUrl}>
 				&nbsp;
 			</DishImage>
+			{btnRequired && <Button href="#">Order</Button>}
 		</DishStyle>
 	);
 }
