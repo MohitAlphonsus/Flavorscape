@@ -1,28 +1,18 @@
 import GlobalStyles from './UI/GlobalStyles';
-import {
-	Header,
-	About,
-	Features,
-	Testimonials,
-	Footer,
-	Booking,
-	Gallery,
-	SpecialDishes,
-} from './components';
-import Navigation from './components/Navigation';
+import Home from './pages/Home';
+import Order from './pages/Order';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 export default function App() {
 	return (
 		<>
-			<Navigation />
-			<Header />
-			<About />
-			<Features />
-			<SpecialDishes />
-			<Gallery />
-			<Testimonials />
-			<Booking />
-			<Footer />
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/store" element={<Order />} />
+				</Routes>
+			</BrowserRouter>
 			<GlobalStyles />
 		</>
 	);
