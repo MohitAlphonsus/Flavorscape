@@ -23,20 +23,12 @@ const NavigationLink = styled.a`
 		background-position: 100%;
 		transform: translateX(1rem);
 	}
-
-	& > span {
-		display: inline-block;
-		margin-right: 1rem;
-	}
 `;
 
-function NavItem({ name, id, href }) {
+function NavItem({ name, href }) {
 	return (
 		<ListItem>
-			<NavigationLink href={href}>
-				<span>0{id}</span>
-				{name}
-			</NavigationLink>
+			<NavigationLink href={href}>{name}</NavigationLink>
 		</ListItem>
 	);
 }
