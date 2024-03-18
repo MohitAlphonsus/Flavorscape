@@ -67,6 +67,7 @@ function SpecialDishes() {
 							price={dish.price}
 							imgUrl={dish.imgUrl}
 							btnRequired={false}
+							bg={true}
 						/>
 					))}
 			</DishContainer>

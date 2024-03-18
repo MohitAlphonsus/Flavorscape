@@ -25,7 +25,19 @@ const DishStyle = styled.div`
 		transform: translate(-50%, -25%);
 		height: calc(100% - 30%);
 		width: calc(100% - 30%);
-		background: url(${dishDeco}) no-repeat center center/cover;
+		${props =>
+			props.$bg
+				? css`
+						background: url(${dishDeco}) no-repeat center center/cover;
+				  `
+				: css`
+						background-color: var(--color-primary-light);
+						height: 100%;
+						/* height: calc(100% - 90%); */
+						clip-path: circle(50% at 50% 50%);
+						top: -5%;
+						z-index: -1;
+				  `}
 	}
 
 	@media (max-width: 1040px) {
@@ -86,9 +98,9 @@ const DishImage = styled.div`
 	background-size: 100%;
 `;
 
-function Dish({ dishName, ing, price, imgUrl, btnRequired }) {
+function Dish({ dishName, ing, price, imgUrl, btnRequired, bg }) {
 	return (
-		<DishStyle>
+		<DishStyle $bg={bg}>
 			<QuaternaryHeading>{dishName}</QuaternaryHeading>
 			<SmallText $text="light">{ing}</SmallText>
 			<Price>{price}₹</Price>
