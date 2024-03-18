@@ -4,6 +4,7 @@ import { SubHeading, SecondaryHeading } from '../UI/Typo';
 import { Dish } from '../components';
 import { dishes } from '../constants/dishes';
 import Button from '../UI/Button';
+import { NavLink } from 'react-router-dom';
 
 const SpecialDishesStyle = styled.section`
 	padding: 6rem 5%;
@@ -14,6 +15,12 @@ const SpecialDishesStyle = styled.section`
 	gap: 4rem;
 	position: relative;
 	z-index: 1;
+
+	& > *:last-child > *:first-child {
+		font: inherit;
+		color: inherit;
+		text-decoration: inherit;
+	}
 `;
 
 const DishContainer = styled.div`
@@ -59,10 +66,14 @@ function SpecialDishes() {
 							ing={dish.ingredients}
 							price={dish.price}
 							imgUrl={dish.imgUrl}
+							btnRequired={false}
 						/>
 					))}
 			</DishContainer>
-			<Button $varient="secondary">Get Your Flavors Delivered!</Button>
+
+			<Button $varient="secondary">
+				<NavLink to="store">Get Your Flavors Delivered!</NavLink>
+			</Button>
 		</SpecialDishesStyle>
 	);
 }
