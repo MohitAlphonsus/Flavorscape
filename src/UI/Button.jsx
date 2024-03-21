@@ -131,15 +131,14 @@ const ButtonLink = styled(ButtonStyle)`
 	}
 `;
 
-function Button({ children, href, $margintop, $varient }) {
-	if (!href)
-		return (
-			<ButtonPrimary $margintop={$margintop} $varient={$varient}>
-				{children}
-			</ButtonPrimary>
-		);
+function Button({ children, href, $margintop, $varient, isLink }) {
+	if (isLink || href) return <ButtonLink>{children}</ButtonLink>;
 
-	return <ButtonLink>{children}</ButtonLink>;
+	return (
+		<ButtonPrimary $margintop={$margintop} $varient={$varient}>
+			{children}
+		</ButtonPrimary>
+	);
 }
 
 export default Button;

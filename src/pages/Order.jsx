@@ -2,25 +2,28 @@ import styled from 'styled-components';
 import { dishes } from '../constants/dishes';
 import Dish from '../components/Dish';
 
-const OrderSection = styled.section`
-	height: 100dvh;
-`;
+import { SubHeading, SecondaryHeading } from '../UI/Typo';
+
+const OrderSection = styled.section``;
 
 const HeaderStyle = styled.header`
-	height: 10%;
+	position: fixed;
+	padding: 2rem 0;
+	text-align: center;
 	width: 100%;
 	background-color: var(--color-accent-white);
+	z-index: 10;
 `;
 
 const DishContainer = styled.div`
-	padding: 6rem 5%;
+	padding: 15% 5% 5% 5%;
 	width: min(95%, 115rem);
 	margin: 0 auto;
 	height: 90%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	row-gap: 12rem;
-	column-gap: 6rem;
+	gap: 6rem;
+	overflow-y: scroll;
 
 	@media (max-width: 960px) {
 		grid-template-columns: repeat(2, 1fr);
@@ -39,7 +42,14 @@ const DishContainer = styled.div`
 function Order() {
 	return (
 		<OrderSection>
-			<HeaderStyle>Order</HeaderStyle>
+			<HeaderStyle>
+				<SubHeading $text="primary-dark">
+					Indulge in Culinary Delights
+				</SubHeading>
+				<SecondaryHeading $secondary="true">
+					Explore Our Exquisite Selection of Specialties
+				</SecondaryHeading>
+			</HeaderStyle>
 			<DishContainer>
 				{dishes.map(dish => (
 					<Dish
@@ -50,6 +60,7 @@ function Order() {
 						imgUrl={dish.imgUrl}
 						btnRequired={true}
 						bg={false}
+						id={dish.id}
 					/>
 				))}
 			</DishContainer>

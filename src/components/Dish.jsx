@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { QuaternaryHeading, SmallText } from '../UI/Typo';
 import { dishDeco } from '../assets';
 import Button from '../UI/Button';
+import { NavLink } from 'react-router-dom';
 
 const DishStyle = styled.div`
 	position: relative;
@@ -16,6 +17,12 @@ const DishStyle = styled.div`
 	align-items: center;
 	gap: 1rem;
 	margin-top: 6rem;
+
+	& > *:last-child > *:first-child {
+		font: inherit;
+		text-decoration: inherit;
+		color: inherit;
+	}
 
 	&::before {
 		position: absolute;
@@ -98,7 +105,7 @@ const DishImage = styled.div`
 	background-size: 100%;
 `;
 
-function Dish({ dishName, ing, price, imgUrl, btnRequired, bg }) {
+function Dish({ dishName, ing, price, imgUrl, btnRequired, bg, id }) {
 	return (
 		<DishStyle $bg={bg}>
 			<QuaternaryHeading>{dishName}</QuaternaryHeading>
@@ -107,7 +114,12 @@ function Dish({ dishName, ing, price, imgUrl, btnRequired, bg }) {
 			<DishImage role="image" $imgurl={imgUrl}>
 				&nbsp;
 			</DishImage>
-			{btnRequired && <Button href="#">Order</Button>}
+
+			{btnRequired && (
+				<Button isLink={true}>
+					<NavLink to={`/store/${id}`}>Order</NavLink>
+				</Button>
+			)}
 		</DishStyle>
 	);
 }
