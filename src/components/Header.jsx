@@ -63,8 +63,3 @@ function Header() {
 }
 
 export default Header;
-
-/**
-Savor the Extraordinary: Culinary Delights Await at [Restaurant Name] – Where Every Bite Tells a Story! 
-
- */

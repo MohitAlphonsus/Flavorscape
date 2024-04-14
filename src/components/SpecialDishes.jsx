@@ -72,9 +72,7 @@ function SpecialDishes() {
 					))}
 			</DishContainer>
 
-			<Button $varient="secondary">
-				<NavLink to="store">Get Your Flavors Delivered!</NavLink>
-			</Button>
+			<Button $varient="secondary">Get Your Flavors Delivered!</Button>
 		</SpecialDishesStyle>
 	);
 }
