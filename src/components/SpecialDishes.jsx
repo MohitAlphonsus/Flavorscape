@@ -4,7 +4,6 @@ import { SubHeading, SecondaryHeading } from '../UI/Typo';
 import { Dish } from '../components';
 import { dishes } from '../constants/dishes';
 import Button from '../UI/Button';
-import { NavLink } from 'react-router-dom';
 
 const SpecialDishesStyle = styled.section`
 	padding: 6rem 5%;
