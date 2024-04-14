@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 import { QuaternaryHeading, SmallText } from '../UI/Typo';
 import { dishDeco } from '../assets';
 import Button from '../UI/Button';
-import { NavLink } from 'react-router-dom';
 
 const DishStyle = styled.div`
 	position: relative;
@@ -115,11 +114,7 @@ function Dish({ dishName, ing, price, imgUrl, btnRequired, bg, id }) {
 				&nbsp;
 			</DishImage>
 
-			{btnRequired && (
-				<Button isLink={true}>
-					<NavLink to={`/store/${id}`}>Order</NavLink>
-				</Button>
-			)}
+			{btnRequired && <Button isLink={true}>Order</Button>}
 		</DishStyle>
 	);
 }
