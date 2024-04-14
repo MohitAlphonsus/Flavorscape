@@ -1,3 +1,4 @@
+import logo from './logo.svg';
 import heroImg from './hero.jpg';
 import aboutImgFirst from './about-1.jpg';
 import aboutImgSecond from './about-2.jpg';
@@ -30,6 +31,7 @@ import dish5 from './dishes/dish-5.png';
 import dish6 from './dishes/dish-6.png';
 
 export {
+	logo,
 	heroImg,
 	aboutImgFirst,
 	aboutImgSecond,
