@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { logo } from '../assets';
 import { SmallText, TertiaryHeading } from '../UI/Typo';
 import SocialIcon from './SocialIcon';
 import { footerData, footerIcon } from '../constants/footerData';
@@ -42,9 +42,12 @@ const Box = styled.div`
 	}
 `;
 
-const Logo = styled.p`
-	font-size: 3rem;
-	font-weight: 400;
+const Logo = styled.div`
+	width: 20rem;
+
+	img {
+		width: 100%;
+	}
 `;
 
 const SocialIcons = styled.ul`
@@ -130,7 +133,9 @@ function Footer() {
 	return (
 		<FooterStyle>
 			<Box>
-				<Logo>LOGO.</Logo>
+				<Logo>
+					<img src={logo} alt="logo" />
+				</Logo>
 				<SmallText>{beingPoetic}</SmallText>
 				<SocialIcons>
 					{footerIcon.map(icon => (

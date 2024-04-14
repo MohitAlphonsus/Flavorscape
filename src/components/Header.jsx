@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { heroImg } from '../assets';
+import { heroImg, logo } from '../assets';
 import { MainHeading, SubHeading } from '../UI/Typo';
 import Button from '../UI/Button';
 import Wave from '../UI/Wave';
@@ -25,16 +25,20 @@ const HeaderStyle = styled.header`
 
 const TextBox = styled.div`
 	position: absolute;
-	top: 40%;
+	top: 35%;
 	left: 50%;
 	transform: translate(-50%, -40%);
-
+	width: 100rem;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 2rem;
-
 	color: var(--color-accent-white);
+
+	img {
+		width: 35rem;
+		margin-bottom: 5rem;
+	}
 
 	@media (max-width: 1040px) {
 		width: 70%;
@@ -49,6 +53,7 @@ function Header() {
 	return (
 		<HeaderStyle>
 			<TextBox>
+				<img src={logo} alt="logo" />
 				<SubHeading $text="primary-light">
 					Savor the Art of Culinary Craftsmanship
 				</SubHeading>
